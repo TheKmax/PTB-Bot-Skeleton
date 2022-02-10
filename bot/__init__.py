@@ -1,9 +1,26 @@
 from telegram.ext import Updater
-import logging, os, time
+import logging, os, sys, time
 import telegram.ext as tg
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                     level=logging.INFO)
+
+StartTime = time.time()
+
+# enable logging
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
+    level=logging.INFO,
+)
+
+LOGGER = logging.getLogger(__name__)
+
+
+# if version < 3.9, stop bot.
+if sys.version_info[0] < 3 or sys.version_info[1] < 9:
+    LOGGER.error(
+        "You must have a python version of at least 3.9! Multiple features depend on this. Bot quitting."
+    )
+    sys.exit()
 
 TOKEN = os.environ.get("TOKEN", None)
 WORKERS = 8
