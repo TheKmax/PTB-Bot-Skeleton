@@ -6,7 +6,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                      level=logging.INFO)
 
 TOKEN = os.environ.get("TOKEN", None)
-WORKERS = 4
+WORKERS = 8
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 
