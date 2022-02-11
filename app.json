@@ -1,0 +1,35 @@
+{
+    "name": "PTB Bot",
+    "description": "A basic coding to understand PTB library",
+    "logo": "https://telegra.ph/file/9681fd4c69eccb154c5ed.jpg",
+    "keywords": [
+       "telegram",
+       "Ptb",
+       "Bot",
+       "manager",
+       "telegram bot",
+       "ptb bot"
+    ],   
+ "repository": "https://github.com/Bharathi2003/PTB-Bot-Skeleton",
+ "addons": [
+    {
+       "options": {
+          "version": "12"
+       },
+       "plan": "heroku-postgresql"
+    }
+ ],
+ "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+ "env": {
+    "TOKEN": {
+       "description": "Your bot token. Get one from @BotFather",
+       "required": true,
+       "value": ""
+    }
