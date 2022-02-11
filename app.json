@@ -9,7 +9,7 @@
        "manager",
        "telegram bot",
        "ptb bot"
-    ],   
+    ],
  "repository": "https://github.com/Bharathi2003/PTB-Bot-Skeleton",
  "addons": [
     {
@@ -32,6 +32,6 @@
        "description": "Your bot token. Get one from @BotFather",
        "required": true,
        "value": ""
-        },
-   }
+    },  
+ }
 }
