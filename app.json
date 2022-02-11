@@ -32,6 +32,6 @@
        "description": "Your bot token. Get one from @BotFather",
        "required": true,
        "value": ""
-    },
-  }
+        },
+   }
 }
