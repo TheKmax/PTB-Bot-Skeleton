@@ -22,8 +22,6 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 9:
     sys.exit()
 
 TOKEN = os.environ.get("TOKEN")
-if TOKEN == None 
-TOKEN = "secrets.TOKEN"
 
 WORKERS = 8
 
