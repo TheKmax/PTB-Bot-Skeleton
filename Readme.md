@@ -16,3 +16,6 @@ to get better understanding
 it'll require the python runtime version of 3.9 as a minimum requirements 
 
 • If you change the version of python on runtime.txt below 3.9 the bot can't be deployed.
+
+
+# How to Deploy
