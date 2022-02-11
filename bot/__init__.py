@@ -22,6 +22,9 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 9:
     sys.exit()
 
 TOKEN = os.environ.get("TOKEN")
+else:
+    TOKEN = "secrets.TOKEN"
+
 WORKERS = 8
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
