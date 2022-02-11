@@ -1,6 +1,11 @@
 ## Python Telegram Bot Beginner Bot Code Sample
 
-Here you can see a set of codes to import variables through heroku environment.
+Here you can see a set of codes as an example for implementation of PTB. 
+
+
+## Here you can see codes to 
+    • import variables through heroku environment.
+    • easiest way of hosting your bot
 
 ## What to do with this example code
 
@@ -26,4 +31,11 @@ The easiest way to deploy this Bot
 
 <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/Bharathi2003/Kitagawa"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-yellow?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-❕ This method will require app.json as a template for environmental variables
+Note: 
+
+This method will require app.json as a template for environmental variables and
+A Procfile to define the process on the dyno Heroku
+
+For more refer Heroku's Documentation
+
+[About Heroku](https://devcenter.heroku.com)
