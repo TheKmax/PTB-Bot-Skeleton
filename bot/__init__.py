@@ -1,4 +1,3 @@
-from telegram.ext import Updater
 import logging, os, sys, time
 import telegram.ext as tg
 
