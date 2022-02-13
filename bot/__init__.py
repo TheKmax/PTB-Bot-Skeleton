@@ -23,7 +23,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 9:
 
 TOKEN = os.environ.get("TOKEN")
 
-WORKERS = 16 # Number of maximum concurrent worker threads for the @run_async decorator and run_async(). Defaults to 4.
+WORKERS = 16  # Number of maximum concurrent worker threads for the @run_async decorator and run_async(). Defaults to 4.
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 
