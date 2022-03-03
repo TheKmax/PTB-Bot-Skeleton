@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext import CommandHandler
-from bot import dispatcher
+from bot import dispatcher1 , dispatcher2
 
 
 def start(update: Update, context: CallbackContext):
@@ -11,4 +11,5 @@ def start(update: Update, context: CallbackContext):
 
 
 start_handler = CommandHandler("start", start, run_async=True)
-dispatcher.add_handler(start_handler)
+dispatcher1.add_handler(start_handler)
+dispatcher2.add_handler(start_handler)
