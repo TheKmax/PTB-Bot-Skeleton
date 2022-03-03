@@ -28,8 +28,8 @@ TOKEN2= os.environ.get("TOKEN2")
 
 WORKERS = 16  # Number of maximum concurrent worker threads for the @run_async decorator and run_async(). Defaults to 4.
 
-updater = tg.Updater(TOKEN1, workers=WORKERS, use_context=True)
-updater = tg.Updater(TOKEN2, workers=WORKERS, use_context=True)
+updater1 = tg.Updater(TOKEN1, workers=WORKERS, use_context=True)
+updater2 = tg.Updater(TOKEN2, workers=WORKERS, use_context=True)
 
 dispatcher = updater.dispatcher
 
