@@ -34,4 +34,5 @@ updater2 = tg.Updater(TOKEN2, workers=WORKERS, use_context=True)
 dispatcher1 = updater1.dispatcher
 dispatcher2 = updater2.dispatcher
 
-updater.start_polling()
+updater1.start_polling()
+updater2.start_polling()
