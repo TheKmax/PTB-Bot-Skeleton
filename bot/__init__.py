@@ -31,6 +31,7 @@ WORKERS = 16  # Number of maximum concurrent worker threads for the @run_async d
 updater1 = tg.Updater(TOKEN1, workers=WORKERS, use_context=True)
 updater2 = tg.Updater(TOKEN2, workers=WORKERS, use_context=True)
 
-dispatcher = updater.dispatcher
+dispatcher1 = updater1.dispatcher1
+dispatcher2 = updater2.dispatcher2
 
 updater.start_polling()
